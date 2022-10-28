@@ -1,0 +1,18 @@
+.jumbotron h1 {
+    color: red;
+    
+}
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: #a5632a;
+    color: white;
+    display: block;
+  }
+
+header .image{
+    border: 1px solid #ddd;
+    border-radius: 100px;
+    width: 500px;
+   
+}
