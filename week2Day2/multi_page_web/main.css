@@ -96,5 +96,12 @@ body {
   }
 }
 
+
+/* background*/
+
+p {
+  background-image: url('webb.png');
+}
+
 /* Login page
 
