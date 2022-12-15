@@ -1,44 +1,29 @@
-// window.onload = function (){
-//     document.querySelector("#myButton")
-//     .addEventListener("click", function(){
-//         console.log("user clicked button!")
-//     });
-//     }
 
-var handleClick = function task3() {
-    console.log("Welcome to my callback test");
+    
+function download(){
+    console.log("Download is activated");
 }
- setTimeout (function task3(){
-            console.log(".");
-    },4000);
 
-var button = document.querySelector('#myButton');
-button.addEventListener('click', handleClick);
+function sayHi(){
+    alert("Hi There!function executed successfully!");
+}
+setTimeout (function download() {
+    console.log("Downloading.:)");
+},3000);
 
-   
-  
-    setTimeout (function task2() {
-        console.log("Hope you enjoyed the delay :)");
-    },10000);
-    
-    
-    // function task3(){
-    //     console.log(".")
-    // }
-    
-   
-    
-    function task4(){
-        console.log("..")
-    }
-    
-    setTimeout (function task3(){
-            console.log("task3 8s");
-    },8000);
-    
-   
-    
-    setTimeout (function task3(){
-            console.log("task3 delays 10s");
-    },10000);
-    
+setTimeout (function download() {
+    console.log("Downloading...:)");
+},6000);
+
+setTimeout (function download() {
+    console.log("Downloading...:)");
+},9000);
+setTimeout (function download() {
+    alert("File downloaded:)");
+},9000);
+// Selecting button element
+var btn = document.getElementById("myButton");
+ 
+// Assigning event listeners to the button
+btn.addEventListener("click",download );
+btn.addEventListener("click", sayHi);
